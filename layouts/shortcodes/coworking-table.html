@@ -1,0 +1,84 @@
+{{ $symbols := (dict "green" "&hearts;" "red" "&diams;" "black" "&bull;" "purple" "&clubs;" "orange" "&spades;") }}
+{{ $opacity := (dict "green" "1.0" "red" "0.25" "black" "&bull;" "purple" "0.75" "orange" "0.5") }}
+<p style="font-size: 80%">&hearts; - optimal | &clubs; - suboptimal | &spades; subpar | &diams; not ideal | &bull; N/A</p>
+<style>
+.coworking-table td.coworking-symbol {
+  text-align: center
+}
+.coworking-key {
+  border-left: 10px rgba(128, 128, 64, 0.1) solid;
+  border-bottom: 3px rgba(128, 128, 64, 0.3) solid;
+  padding-left: 5%;
+  min-width: 100px;
+}
+.coworking-key-breakdown {
+  font-size: 40%;
+}
+.coworking-key-description {
+  font-size: 70%;
+  font-style: italic;
+}
+</style>
+
+<script>
+function showKey(id) {
+  var el = document.getElementById(id);
+  if (el.style.display == "none") {
+    el.style.display = "block";
+  } else {
+    el.style.display = "none";
+  }
+}
+</script>
+{{ $spaces := shuffle $.Site.Data.coworking }}
+<table class="coworking-table">
+  <thead>
+    <tr>
+      <th></th>
+      {{ range $i, $space := $spaces }}
+      <th style="width: 15%; padding-top: 10%"><div style="text-align: center; width: 100%; transform-origin: 50% 0%; transform: rotate(-60deg)">{{ $space }}</div></th>
+      {{ end }}
+    </tr>
+  </thead>
+  {{ range $r := $.Site.Data.ranges.grid }}
+    <tbody>
+      <tr><td><h2>{{ $r.key }}</h2></td></tr>
+      <tr><td><hr/></td></tr>
+      {{ range $j, $entry := $r.entries }}
+      <tr>
+        <td>{{ $entry.title }} <span style="font-size: 60%"><a href="javascript:showKey('{{ $j }}-key')">[+]</a></span></td>
+        {{ range $k := $spaces }}
+          {{ $details := index $.Site.Data (printf "coworking-%s" $k) }}
+          {{ if (index $details $r.key) }}
+            {{ if (index (index $details $r.key) $j) }}
+              {{ $colour := index $entry.ranges (index (index $details $r.key) $j) }}
+            <td class="coworking-symbol">
+              {{ if $colour }}
+              <span style="color: {{ $colour }}; opacity: {{ index $opacity $colour }}">{{ index $symbols $colour | safeHTML }}</span>
+              {{ end }}
+            </td>
+            {{ else }}
+            <td></td>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      </tr>
+      <tr id="{{ $j }}-key" style="display: none">
+        <td class="coworking-key">
+          {{ if index $entry "description" }}
+          <div class="coworking-key-description">
+            {{ $entry.description }}
+          </div>
+          {{ end }}
+          <div class="coworking-key-breakdown">
+          {{ range $key, $colour := $entry.ranges }}
+          <span style="color: {{ $colour }}; opacity: {{ index $opacity $colour }}">{{ index $symbols $colour | safeHTML }}</span> - {{ $key }}</br>
+          {{ end }}
+          </div>
+        </td>
+      </tr>
+      {{ end }}
+    </tbody>
+  {{ end }}
+  </tbody>
+</table>

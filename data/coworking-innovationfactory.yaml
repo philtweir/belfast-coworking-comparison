@@ -1,0 +1,32 @@
+shortName: "Innovation Factory"
+url: "https://www.innovationfactoryni.com/"
+coworkingEstablished: 2016
+fulltimeStaff: >3
+
+provisions:
+  onsiteStaff: "fulltime"
+  levelOfPolish: "professional"
+  arts: "some"
+  technical: "regular"
+  workshop: "some"
+  business: "lots"
+  parking: "free"
+  location: "city"
+membership:
+  nonDeskMemberships: "yes"
+  casual: "no"
+  full: "<£50/m"
+  concession: "no"
+hotDesk:
+  members: "<£12/visit"
+  dropins: "no"
+  sampleDayFree: "yes"
+deskRental:
+  supplement: "£80-£120/m"
+  incubatorOpportunities: "yes"
+  outOfHoursAccess: "yes"
+  regMail: "free"
+  includedPrivateMeetings: "no"
+  supplementaryPrivateMeetings: "£10-£25/h"
+other:
+  reciprocalOutOfNI: "yes"

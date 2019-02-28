@@ -1,0 +1,34 @@
+shortName: "Farset Labs"
+url: "https://www.farsetlabs.org.uk/"
+coworkingEstablished: 2012
+fulltimeStaff: 0
+
+provisions:
+  levelOfPolish: "low"
+  onsiteStaff: "volunteers"
+  arts: "regular"
+  technical: "lots"
+  workshop: "regular"
+  business: "regular"
+  parking: "free"
+membership:
+  nonDeskMemberships: "yes"
+  casual: "<£30/m"
+  full: "<£50/m"
+  concession: "<£20/m"
+hotDesk:
+  members: "free"
+  printing: "free"
+  dropins: "<£10/day"
+  sampleDayFree: "yes"
+deskRental:
+  supplement: "£80-£120/m"
+  incubatorOpportunities: "no"
+  outOfHoursAccess: "yes"
+  printingBw: "free"
+  printingColour: "free"
+  regMail: "free"
+  includedPrivateMeetings: "free"
+  supplementaryPrivateMeetings: "free"
+other:
+  reciprocalOutOfNI: "no"

@@ -1,0 +1,183 @@
+description:
+  shortName:
+    title: "Short Name"
+  url:
+    title: "Website"
+  coworkingEstablished:
+    title: "Coworking since"
+  fulltimeStaff:
+    title: "Coworking staff"
+grid:
+  - key: "provisions"
+    entries:
+      parking:
+        title: "Parking"
+        ranges:
+          "free": "green"
+          "usu free on-street": "yellow"
+          "paid": "orange"
+          "no": "red"
+      location:
+        title: "Location"
+        ranges:
+          "central": "green" # within 15min walk of city hall, by google maps
+          "inner": "yellow" # within inner metro area
+          "city": "orange" # within city metro area
+          "outskirts": "red" # otherwise
+      onsiteStaff:
+        title: "Onsite staff"
+        ranges:
+          "volunteers": "red"
+          "regularly": "orange"
+          "fulltime": "green"
+      levelOfPolish:
+        title: "Level of polish"
+        ranges:
+          "low": "red"
+          "professional": "purple"
+          "shoreditch": "green"
+      arts:
+        title: "Arts users?"
+        description: "Many creative (non-tech industry) users?"
+        ranges:
+          "no": "red"
+          "some": "orange"
+          "regular": "purple"
+          "proactive": "green"
+      technical:
+        title: "Technical users?"
+        description: "Many technically-focused users?"
+        ranges:
+          "no": "red"
+          "some": "orange"
+          "regular": "purple"
+          "lots": "green"
+      workshop:
+        title: "Workshop?"
+        description: "Many hardware/workshop users?"
+        ranges:
+          "no": "red"
+          "some": "orange"
+          "regular": "purple"
+          "lots": "green"
+      business:
+        title: "Business users?"
+        ranges:
+          "no": "red"
+          "some": "orange"
+          "regular": "purple"
+          "lots": "green"
+  - key: "membership"
+    entries:
+      nonDeskMemberships:
+        title: "Non-Desk Memberships"
+        ranges:
+          "yes": green
+          "no": red
+      casual:
+        title: "Low Usage Rate"
+        ranges:
+          "<£30/m": green
+          "£30-£60/m": purple
+          "£60-£100/m": orange
+          ">£100/m": red
+          "no": black
+      full:
+        title: "Full/Unlimited"
+        ranges:
+          "<£50/m": green
+          "£50-£90/m": purple
+          "£90-£150/m": orange
+          ">£150/m": red
+          "no": black
+      concession:
+        title: "Concession"
+        ranges:
+          "<£20/m": green
+          "£20-£50/m": purple
+          "no": black
+  - key: "hotDesk"
+    entries:
+      members:
+        title: "Member Hot-desk (/visit)"
+        ranges:
+          "free": green
+          "<£12/visit": orange
+          ">£12/visit": red
+      printing:
+        title: "Hot-desker printing"
+        ranges:
+          "free": green
+          "paid": orange
+          "no": red
+      sampleDayFree: # publicly advertised
+        title: "First visit free"
+        ranges:
+          "yes": green
+          "no": red
+      dropins:
+        title: "Drop-in"
+        ranges:
+          "no": black
+          "<£10/day": green
+          "£10-30/day": orange
+          ">30/day": red
+  - key: "deskRental"
+    entries:
+      supplement:
+        title: "Dedicated Desk Supplement"
+        ranges:
+          "<£80/m": green
+          "£80-£120/m": purple
+          "£120-£200/m": orange
+          ">£200/m": red
+      outOfHoursAccess:
+        title: "24/7"
+        ranges:
+          "yes": green
+          "no": red
+      incubatorOpportunities:
+        title: "Incubator-Sponsored Desks"
+        ranges:
+          "yes": green
+          "paid": orange
+          "no": red
+      printingBw:
+        title: "Printing (B&W)"
+        ranges:
+          "free": green
+          "paid": orange
+          "no": red
+      printingColour:
+        title: "Printing (Colour)"
+        ranges:
+          "free": green
+          "paid": orange
+          "no": red
+      regMail:
+        title: "Reg. Office Mail"
+        ranges:
+          "free": green
+          "paid": orange
+          "no": red
+      includedPrivateMeetings:
+        title: "Inc. Meeting Room Usage"
+        ranges:
+          "free": green
+          "5-10h/m free": purple
+          "1-5h/m free": orange
+          "no": red
+      supplementaryPrivateMeetings: # 'free' for only fair-usage limits
+        title: "Supp. Meeting Room Usage"
+        ranges:
+          "free": green
+          "<£10/h": purple
+          "£10-£25/h": orange
+          ">£25/h": red
+  - key: "other"
+    entries:
+      reciprocalOutOfNI:
+        title: "Reciprocal memberships outside NI"
+        ranges:
+          "yes": green
+          "no": red

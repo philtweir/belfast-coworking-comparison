@@ -1,0 +1,34 @@
+shortName: "Ormeau Baths"
+url: "https://www.ormeaubaths.com/en"
+coworkingEstablished: 2012
+fulltimeStaff: ">0"
+
+provisions:
+  onsiteStaff: "fulltime"
+  levelOfPolish: "shoreditch"
+  arts: "some"
+  technical: "regular"
+  workshop: "no"
+  business: "lots"
+  parking: "no"
+  location: "central"
+membership:
+  nonDeskMemberships: "yes"
+  casual: "no"
+  full: "£90-£150/m"
+  concession: "no"
+hotDesk:
+  members: "free"
+  printing: "no"
+  dropins: "no"
+  sampleDayFree: "no"
+deskRental:
+  supplement: "£80-£120/m"
+  incubatorOpportunities: "yes"
+  outOfHoursAccess: "yes"
+  printingBw: "free"
+  regMail: "free"
+  includedPrivateMeetings: "1-5h/m free"
+  printingColour: "paid"
+other:
+  reciprocalOutOfNI: "yes"
