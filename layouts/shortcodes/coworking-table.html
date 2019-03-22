@@ -1,6 +1,20 @@
+{{ $colours := slice "green" "purple" "orange" "red" "black" }}
 {{ $symbols := (dict "green" "&hearts;" "red" "&diams;" "black" "&bull;" "purple" "&clubs;" "orange" "&spades;") }}
+{{ $descriptions := (dict "green" "woohoo" "red" "ummm" "black" "N/A" "purple" "sure" "orange" "wellll") }}
 {{ $opacity := (dict "green" "1.0" "red" "0.25" "black" "&bull;" "purple" "0.75" "orange" "0.5") }}
-<p style="font-size: 80%">&hearts; - optimal | &clubs; - suboptimal | &spades; subpar | &diams; not ideal | &bull; N/A</p>
+<style>
+{{ range $colour := $colours }}
+.rating-{{ $colour }} {
+  color: {{ $colour }};
+  opacity: {{ index $opacity $colour }};
+}
+{{ end }}
+</style>
+<p style="font-size: 80%">|
+{{ range $colour := $colours }}
+<span class="rating-{{ $colour }}">{{ index $symbols $colour | safeHTML }}</span> - {{ index $descriptions $colour }} |
+{{ end }}
+</p>
 <style>
 .coworking-table td.coworking-symbol {
   text-align: center
@@ -40,6 +54,24 @@ function showKey(id) {
       {{ end }}
     </tr>
   </thead>
+    <tbody>
+      <tr><td><h2>general</h2></td></tr>
+      <tr><td><hr/></td></tr>
+      <tr>
+        <td>Who?</td>
+      {{ range $k := $spaces }}
+        {{ $details := index $.Site.Data (printf "coworking-%s" $k) }}
+        <td style="text-align: center"><a href="{{ $details.url }}">{{ $details.shortName }}</a></td>
+      {{ end }}
+      </tr>
+      <tr>
+        <td>Coworking since</td>
+      {{ range $k := $spaces }}
+        {{ $details := index $.Site.Data (printf "coworking-%s" $k) }}
+        <td style="text-align: center">~{{ sub (time now).Year $details.coworkingEstablished }} years</td>
+      {{ end }}
+      </tr>
+    </tbody>
   {{ range $r := $.Site.Data.ranges.grid }}
     <tbody>
       <tr><td><h2>{{ $r.key }}</h2></td></tr>
@@ -54,7 +86,7 @@ function showKey(id) {
               {{ $colour := index $entry.ranges (index (index $details $r.key) $j) }}
             <td class="coworking-symbol">
               {{ if $colour }}
-              <span style="color: {{ $colour }}; opacity: {{ index $opacity $colour }}">{{ index $symbols $colour | safeHTML }}</span>
+              <span class="rating-{{ $colour }}">{{ index $symbols $colour | safeHTML }}</span>
               {{ end }}
             </td>
             {{ else }}

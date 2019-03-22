@@ -1,0 +1,38 @@
+shortName: "Blick Shared Studios"
+url: "https://www.blickstudios.org/"
+coworkingEstablished: 2010
+fulltimeStaff: 0
+
+provisions:
+  levelOfPolish: "shoreditch"
+  onsiteStaff: "fulltime"
+  arts: "proactive"
+  location: "central"
+  technical: null
+  workshop: "no"
+  business: "regular"
+  parking: "no"
+  designers: "lots"
+membership:
+  nonDeskMemberships: "no"
+  casual: "no"
+  full: "no"
+  concession: "no"
+hotDesk:
+  members: "N/A"
+  printing: "N/A"
+  dropins: "no"
+  sampleDayFree: "N/A"
+  outOfHoursAccess: "N/A"
+deskRental:
+  supplement: "£120-£200/m"
+  incubatorOpportunities: "no"
+  outOfHoursAccess: "yes"
+  printingBw: "no"
+  printingColour: "no"
+  regMail: "free"
+  includedPrivateMeetings: "free"
+  supplementaryPrivateMeetings: "free"
+other:
+  reciprocalOutOfNI: "no"
+  multiSite: "yes"

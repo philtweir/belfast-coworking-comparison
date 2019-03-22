@@ -7,10 +7,12 @@ provisions:
   levelOfPolish: "low"
   onsiteStaff: "volunteers"
   arts: "regular"
+  location: "central"
   technical: "lots"
   workshop: "regular"
   business: "regular"
   parking: "free"
+  designers: "no"
 membership:
   nonDeskMemberships: "yes"
   casual: "<£30/m"
@@ -21,6 +23,7 @@ hotDesk:
   printing: "free"
   dropins: "<£10/day"
   sampleDayFree: "yes"
+  outOfHoursAccess: "yes"
 deskRental:
   supplement: "£80-£120/m"
   incubatorOpportunities: "no"
@@ -32,3 +35,4 @@ deskRental:
   supplementaryPrivateMeetings: "free"
 other:
   reciprocalOutOfNI: "no"
+  multiSite: "no"

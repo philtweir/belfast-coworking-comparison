@@ -14,14 +14,14 @@ grid:
         title: "Parking"
         ranges:
           "free": "green"
-          "usu free on-street": "yellow"
+          "usu free on-street": "purple"
           "paid": "orange"
           "no": "red"
       location:
         title: "Location"
         ranges:
           "central": "green" # within 15min walk of city hall, by google maps
-          "inner": "yellow" # within inner metro area
+          "inner": "purple" # within inner metro area
           "city": "orange" # within city metro area
           "outskirts": "red" # otherwise
       onsiteStaff:
@@ -44,6 +44,14 @@ grid:
           "some": "orange"
           "regular": "purple"
           "proactive": "green"
+      designers:
+        title: "Designers?"
+        description: "Many tech industry design/UX users?"
+        ranges:
+          "no": "red"
+          "some": "orange"
+          "regular": "purple"
+          "lots": "green"
       technical:
         title: "Technical users?"
         description: "Many technically-focused users?"
@@ -99,22 +107,25 @@ grid:
   - key: "hotDesk"
     entries:
       members:
-        title: "Member Hot-desk (/visit)"
+        title: "Member hot-desk cost/visit"
         ranges:
           "free": green
           "<£12/visit": orange
           ">£12/visit": red
+          "N/A": black
       printing:
         title: "Hot-desker printing"
         ranges:
           "free": green
           "paid": orange
           "no": red
+          "N/A": black
       sampleDayFree: # publicly advertised
         title: "First visit free"
         ranges:
           "yes": green
           "no": red
+          "N/A": black
       dropins:
         title: "Drop-in"
         ranges:
@@ -122,6 +133,12 @@ grid:
           "<£10/day": green
           "£10-30/day": orange
           ">30/day": red
+      outOfHoursAccess:
+        title: "Member hot-desk 24/7"
+        ranges:
+          "yes": green
+          "no": red
+          "N/A": black
   - key: "deskRental"
     entries:
       supplement:
@@ -178,6 +195,11 @@ grid:
     entries:
       reciprocalOutOfNI:
         title: "Reciprocal memberships outside NI"
+        ranges:
+          "yes": green
+          "no": red
+      multiSite:
+        title: "Multiple NI sites"
         ranges:
           "yes": green
           "no": red

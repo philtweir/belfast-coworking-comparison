@@ -12,6 +12,7 @@ provisions:
   business: "lots"
   parking: "free"
   location: "city"
+  designers: "regular"
 membership:
   nonDeskMemberships: "yes"
   casual: "no"
@@ -21,6 +22,7 @@ hotDesk:
   members: "<£12/visit"
   dropins: "no"
   sampleDayFree: "yes"
+  outOfHoursAccess: "no"
 deskRental:
   supplement: "£80-£120/m"
   incubatorOpportunities: "yes"
@@ -30,3 +32,4 @@ deskRental:
   supplementaryPrivateMeetings: "£10-£25/h"
 other:
   reciprocalOutOfNI: "yes"
+  multiSite: "no"
