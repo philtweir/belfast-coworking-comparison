@@ -34,10 +34,11 @@ grid:
         title: "Level of polish"
         ranges:
           "low": "red"
+          "reasonable": "orange"
           "professional": "purple"
           "shoreditch": "green"
       arts:
-        title: "Arts users?"
+        title: "Many arts users?"
         description: "Many creative (non-tech industry) users?"
         ranges:
           "no": "red"
@@ -45,7 +46,7 @@ grid:
           "regular": "purple"
           "proactive": "green"
       designers:
-        title: "Designers?"
+        title: "Many designers?"
         description: "Many tech industry design/UX users?"
         ranges:
           "no": "red"
@@ -53,7 +54,7 @@ grid:
           "regular": "purple"
           "lots": "green"
       technical:
-        title: "Technical users?"
+        title: "Many technical users?"
         description: "Many technically-focused users?"
         ranges:
           "no": "red"
@@ -69,7 +70,7 @@ grid:
           "regular": "purple"
           "lots": "green"
       business:
-        title: "Business users?"
+        title: "Many business users?"
         ranges:
           "no": "red"
           "some": "orange"
@@ -177,6 +178,7 @@ grid:
           "free": green
           "paid": orange
           "no": red
+          "unclear": black
       includedPrivateMeetings:
         title: "Inc. Meeting Room Usage"
         ranges:

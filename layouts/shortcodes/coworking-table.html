@@ -1,6 +1,6 @@
 {{ $colours := slice "green" "purple" "orange" "red" "black" }}
 {{ $symbols := (dict "green" "&hearts;" "red" "&diams;" "black" "&bull;" "purple" "&clubs;" "orange" "&spades;") }}
-{{ $descriptions := (dict "green" "woohoo" "red" "ummm" "black" "N/A" "purple" "sure" "orange" "wellll") }}
+{{ $descriptions := (dict "green" "best" "red" "so-so" "black" "N/A" "purple" "good" "orange" "ok") }}
 {{ $opacity := (dict "green" "1.0" "red" "0.25" "black" "&bull;" "purple" "0.75" "orange" "0.5") }}
 <style>
 {{ range $colour := $colours }}
@@ -26,7 +26,7 @@
   min-width: 100px;
 }
 .coworking-key-breakdown {
-  font-size: 40%;
+  font-size: 60%;
 }
 .coworking-key-description {
   font-size: 70%;

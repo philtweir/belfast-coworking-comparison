@@ -1,0 +1,38 @@
+shortName: "LoftSpace"
+url: "https://www.loft-space.co.uk/"
+coworkingEstablished: 2018
+fulltimeStaff: 1
+
+provisions:
+  levelOfPolish: "shoreditch"
+  onsiteStaff: "fulltime"
+  arts: "some"
+  location: "central"
+  technical: "lots"
+  workshop: "red"
+  business: "lots"
+  parking: "no"
+  designers: "lots"
+membership:
+  nonDeskMemberships: "yes"
+  casual: "£60-£100/m"
+  full: "£90-£150/m"
+  concession: "no"
+hotDesk:
+  members: "free"
+  printing: "free"
+  dropins: "£10-30/day"
+  sampleDayFree: "no"
+  outOfHoursAccess: "no"
+deskRental:
+  supplement: "<£80/m"
+  incubatorOpportunities: "no"
+  outOfHoursAccess: "yes"
+  printingBw: "free"
+  printingColour: "free"
+  regMail: "unclear"
+  includedPrivateMeetings: "5-10h/m free"
+  supplementaryPrivateMeetings: "<£10/h"
+other:
+  reciprocalOutOfNI: "no"
+  multiSite: "no"
