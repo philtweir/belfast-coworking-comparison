@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://philtweir.github.io/belfast-coworking-comparison/"
 languageCode = "en-us"
 title = "Belfast Coworking Comparison"
 theme = "winning"
