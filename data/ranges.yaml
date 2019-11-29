@@ -195,6 +195,13 @@ grid:
           ">£25/h": red
   - key: "other"
     entries:
+      webSelfService:
+        title: "Web Self-Service"
+        ranges:
+          "polished": green # e.g. Nexedus
+          "resource-booking": purple
+          "billing-only": orange
+          "none": red
       reciprocalOutOfNI:
         title: "Reciprocal memberships outside NI"
         ranges:
