@@ -197,6 +197,7 @@ grid:
     entries:
       webSelfService:
         title: "Web Self-Service"
+        description: "Is there an easy-to-use, integrated online self-service system to manage membership, resource usage, billing and community?"
         ranges:
           "polished": green # e.g. Nexedus
           "resource-booking": purple
